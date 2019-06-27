@@ -1,0 +1,68 @@
+/* way to write comments in a css file */
+/* use tags directly, but  ->  .class  #id    
+multiple items can be chosen, seperated by commas
+h1, .unordered, #para1 {font-family: serif} 
+tag.class   affects only classes in that tag
+.class1.class2 affects the items that belongs to both classes
+#id1 a {} affects only the links in that particular id
+#id1 > a {}  if u want to affect only the direct descendants but noy the grand children
+p * {}    doesn't affect any paragraph, but children */
+html{
+    background-color: aquamarine;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-family:Helvetica sans-serif /* serif, sans-serif, monospace, cursive, fantasy */
+                                     /* if helvetica isn't available, uses sans-serif  */
+}
+h1{
+    border: 3px solid #ffffff;
+    border-radius: 90%;
+    font-size: 25px;
+    color: darkmagenta;  /* rgb(255, 255, 255) 
+                            rgba(255, 255, 255, 0.7) red, green, blue, transparency
+                            #FFFFFF  hexadecimal can be used as well    */
+    text-align: center; /* right, left, center, justify */
+    text-decoration: underline; /* underline  overline line-through */
+    background-color: lightseagreen;
+    height: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 12px;
+    align-content: center
+}
+p{
+    color: darkviolet;
+    margin-left: 25%;
+    margin-right:25%;
+    padding: 3%;
+    font-weight: 200; /* normal = 400,  bold = 700 */
+    border: 5px solid #ffffff
+}
+address{
+    font-size: .8rem; /* {em} relative to parent, {rem} relative to root */
+    color: dimgray;
+    font-family: serif;
+    font-style: normal;
+    margin-left: 25%
+}
+.unordered{
+    list-style-type: circle; /* disc, circle, square, and none 
+    list-style-image: url("path.png")   if you want to use custom images */ 
+}
+.ordered{
+    list-style-type: upper-roman; /* decimal, decimal-leading-zero, lower-roman, 
+                                    upper-roman, lower-alpha, upper-alpha*/
+                            
+}
+
+/*
+'vh' stands for viewport height, and 'vw' for viewport width.  The vh and vw units work much 
+like the percentage ( % ) unit. But instead of percentage of the parent, it is percentage 
+of the screen (aka viewport).  Obviously, vh is for vertical dimensions, and vw for horizontal 
+dimensions.
+vh and vw do not suffer the parent limitation that the % unit does.  
+Most modern browsers support these units, but there are some exceptions on older mobile browsers. 
+
+  margin-left:  10vw;
+  margin-right: 10vw;  /* 10% of screen width will be spent on the two side margins
+*/
